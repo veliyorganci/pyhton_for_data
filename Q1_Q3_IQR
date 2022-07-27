@@ -1,0 +1,18 @@
+data = [32, 36, 46, 47, 56, 69, 75, 79, 80, 88, 89]
+
+Q1 = np.percentile(data, 25)
+print("Q1:", Q1)
+Q2 = np.percentile(data, 50)
+print("Q2:", Q2)
+Q3 = np.percentile(data, 75)
+print("Q3:", Q3)
+
+IQR = (Q3-Q1) #option1
+print("IQR:", IQR)
+IQR = stats.iqr(data) #option2
+
+variance = np.var(data)
+print("variance:", variance)
+
+std_dev = np.std(data)
+print("std_dev:",std_dev )
