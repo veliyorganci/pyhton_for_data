@@ -1,0 +1,25 @@
+sns.get_dataset_names()
+
+['anagrams',
+ 'anscombe',
+ 'attention',
+ 'brain_networks',
+ 'car_crashes',
+ 'diamonds',
+ 'dots',
+ 'exercise',
+ 'flights',
+ 'fmri',
+ 'geyser',
+ 'iris',
+ 'mpg',
+ 'penguins',
+ 'planets',
+ 'taxis',
+ 'tips',
+ 'titanic']
+ 
+tips = sns.load_dataset("tips")
+
+tips.head()
+tips.info(
